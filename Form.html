@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HtmlForm</title>
+    <style>
+        body{
+            margin-left: 20px;
+        }
+        input{
+            background-color: rgb(128, 128, 128);
+            border-radius: 5px;
+            margin: 3px;
+        }
+      div{
+        margin-top: 30px;
+      }
+      #submit,#reset{
+        padding: 10px;
+        font-weight: bolder;
+      }
+      a{
+            text-decoration: none;
+            font-size: xx-large;
+            color: blue;
+        }
+       
+        
+
+        
+    </style>
+</head>
+<body>
+    
+    <form>
+        <h1>HTML Form</h1>
+        <table>
+            <tr>
+                <td><label for="#fname">First Name:</label></td>
+                <td><input type="text" id="fname"></td>
+            </tr>
+            <tr>
+                <td><label for="#lname">Last Name:</label></td>
+                <td><input type="text" id="lname"></td>
+            </tr>
+            <tr>
+                <td><label for="#date">Date of Birth:</label></td>
+                <td><input type="text" id="date"></td>
+            </tr>
+            <tr>
+                <td><label for="#email">Email id:</label></td>
+                <td><input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="#num">Mobile Number:</label></td>
+                <td><input type="text" id="num"></td>
+            </tr>
+         
+        </table>
+        <div>
+            <input type="submit" value="SUBMIT" id="submit" >
+            <input type="reset" value="RESET" id="reset" >
+        </div>
+       <a href="./Form2.html">Go to next</a>
+
+    </form>
+</body>
+</html>

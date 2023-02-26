@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+    <style>
+        body{
+            background-color: black;
+           
+           
+        }
+        #box{
+           
+           display: flex;
+           justify-content: center;
+
+        }
+        form{
+            
+            background-color: rgba(0, 0, 0, 0.20);
+            color: ghostwhite;
+            width: 400px;
+            height: 410px;
+            margin: 20px;
+            
+            padding-left: 100px;
+            padding-top: 10px;
+          
+           
+            }
+    
+        #container{
+            background-color: crimson;
+            width: 800px;
+            height: 460px;
+            margin-left: 120px;
+    
+        }
+        button{
+            width: 280px;
+            padding: 10px;
+            text-align: center;
+            color: rgb(236, 7, 129);
+            font-weight: bolder;
+            border-radius: 5px;
+            
+        }
+        table{
+           height: 350px;
+           padding: 5px;
+           
+        }
+        a{
+            text-decoration: none;
+            font-size: xx-large;
+            color: ghostwhite;
+        }
+       
+      
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+            <form action="">
+            <table>
+                <tr>
+                    <td><label for="#fname">Name:</label></td>
+                    <td><input type="text" placeholder="your name" id="fname"></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="#email">Email:</label></td>
+                    <td><input type="email" placeholder="your email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="#pass">Password:</label></td>
+                    <td><input type="password" id="pass"></td>
+                </tr>
+                <tr>
+                    <td><label for="#num">Phone Number:</label></td>
+                    <td><input type="number" id="num"></td>
+                </tr>
+                <tr>
+                    <td><label for="#gender">Gender:</label></td>
+                    <td>
+                        Male:<input type="radio" id="gender" name="gnd" >
+                        Female:<input type="radio" id="gender"  name="gnd">
+                        Other:<input type="radio" id="gender"  name="gnd">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="#language">language:</label></td>
+                    <td>
+                        <select name="" id="language">
+                            <option value="">select language</option>
+                            <option value="">hindi</option>
+                            <option value="">english</option>
+                            <option value="">odia</option>
+                        </select>
+                    </td>
+                </tr>
+                    <tr>
+                        <td><label for="#zipcode">Zip Code:</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="#about">About:</label></td>
+                        <td><textarea name="" id="" cols="20" rows="2" placeholder="Write about yourself" ></textarea></td>
+                    </tr>
+                    
+                   
+            </table>
+            <button>Register</button>
+        </form>
+       
+        </div>
+        <a href="./Form3.html">Go to next</a>
+    </div>
+    
+</body>
+</html>
