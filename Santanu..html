@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1716c1b3;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: ghostwhite;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu li a {
+  font-size: 16px;
+  color: ghostwhite;
+  text-decoration: none;
+}
+
+.toggle {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu li {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .toggle {
+    display: block;
+  }
+}
+.carousel {
+  position: relative;
+  top: 50px;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+.card {
+			background-color: #ffffff;
+			box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+			padding: 16px;
+			margin: 16px;
+			border-radius: 10px;
+			width: 300px;
+			height: 400px;
+			display: inline-block;
+			overflow: hidden;
+        margin-top: 80px;
+		}
+		.card img {
+			height: 200px;
+			width: 100%;
+			object-fit: cover;
+			margin-bottom: 16px;
+		}
+		.card h3 {
+			font-size: 24px;
+			margin-bottom: 16px;
+			color: #333333;
+			font-weight: bold;
+			text-align: center;
+		}
+		.card p {
+			font-size: 18px;
+			margin-bottom: 16px;
+			color: #666666;
+			text-align: justify;
+			line-height: 1.5;
+		}
+        footer {
+        
+		background-color: #333;
+		color: #fff;
+		padding: 20px;
+        position: relative;
+        top: 80px;
+	}
+
+	#address-map {
+		display: flex;
+        
+		justify-content:end;
+		
+	}
+
+	#address {
+		flex: 1;
+	}
+
+	#map {
+		width: 400px;
+		height: 300px;
+        position: relative;
+        left: 200px;
+        
+	}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <a href="#">Five Star Odia Pg</a>
+        </div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+
+      <div class="carousel">
+        <div class="slide">
+          <img src="./images/unnamed.jpg">
+        </div>
+        <div class="slide">
+          <img src="./images/2019-12-14.jpg">
+        </div>
+        <div class="slide">
+          <img src="./images/2019-12-14 (1).jpg">
+        </div>
+      </div>
+
+      <div class="card">
+		<img src="./images/WhatsApp Image 2023-02-23 at 1.41.48 PM.jpeg" alt="Image 1">
+		<h3>R.k Barik</h3>
+		<p>Pg Founder</p>
+	</div>
+	<div class="card">
+		<img src="https://picsum.photos/id/104/300/200" alt="Image 2">
+		<h3>Card Title 2</h3>
+		<p>This is the description for card 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+	<div class="card">
+		<img src="https://picsum.photos/id/160/300/200" alt="Image 3">
+		<h3>Card Title 3</h3>
+		<p>This is the description for card 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	</div>
+      <hr>
+      <h1>PG Website Registration Form</h1>
+      <form id="register-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+  
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+  
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required><br>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+  
+        <label for="phone-number">Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{10}" required><br>
+  
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea><br>
+  
+        <button type="submit">Register</button>
+      </form>
+
+      <!-- Footer section -->
+	<footer>
+		<address id="address-map">
+            Address: 5th Main Road, SGR Dental College Road Munnekollal, Kasavanahalli Village, Marathahalli, Bengaluru, Karnataka 560037
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3737636023766!2d77.7016486485748!3d12.947918490826591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13c078eb4653%3A0x4ce82449abdace72!2sFive%20Star%20Odia%20PG%20For%20Gents!5e0!3m2!1sen!2sin!4v1677140419169!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        </address>
+
+        
+	</footer>
+  
+
+      <script>
+        const form = document.getElementById('register-form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const username = form.elements['username'].value;
+  const password = form.elements['password'].value;
+  const confirmPassword = form.elements['confirm-password'].value;
+  const email = form.elements['email'].value;
+  const phoneNumber = form.elements['phone-number'].value;
+  const address = form.elements['address'].value;
+
+  // Perform validation here
+  // ...
+
+  // Send data to server here
+  // ...
+});
+
+        const carousel = document.querySelector('.carousel');
+const slides = carousel.querySelectorAll('.slide');
+let currentSlide = 0;
+
+function nextSlide() {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('active');
+}
+
+setInterval(nextSlide, 3000);
+
+        const toggleBtn = document.querySelector('.toggle');
+const menu = document.querySelector('.menu');
+
+toggleBtn.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+
+      </script>
+      
+</body>
+</html>
