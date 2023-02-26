@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin: 0;
+            border: 0;
+            background-color: hsl(0, 0%, 90%);
+        }
+        nav{
+            background-color: black;
+            padding: 5px;
+            font-weight: bolder;
+           font-family: 'Times New Roman', Times, serif;
+           
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+        }
+        li{
+            margin-left: 30px;
+            color: ghostwhite;
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: ghostwhite;
+           
+        }
+        a:hover,i:hover{
+        border: 2px solid black;
+        background-color: red;
+        
+       }
+        #para{
+            text-align: center;
+            font-size: large;
+        }
+        label{
+            background-color: black;
+            color: ghostwhite;
+            padding: 5px;
+            display: inline-block;
+            width: 200px;
+            text-align: left;
+
+
+        }
+        #form{
+            margin-top: 50px;
+            margin-left: 150px;
+           
+         
+          
+          
+        }
+        input{
+            margin-bottom: 20px;
+            margin-left: 10px;
+            display: inline-block;
+            width: 400px;
+            padding: 7px;
+        }
+        textarea{
+            display: inline-block;
+            width: 400px;
+            padding: 5px;
+            margin-left: 10px;
+        }
+        button{
+            padding: 5px;
+            background-color: red;
+            color: ghostwhite;
+            font-weight: bolder;
+            margin-top: 10px;
+            width: 150px;
+        }
+        #para p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+          
+            
+        }
+        #message{
+            position: absolute;
+            left: 400px;
+           bottom:100px;
+  
+           font-size: small;
+           margin-bottom: 3px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i></li>
+            <li><a href="">ABOUT BLACK SHEEP</a></li>
+            <li><a href="">NEWS/FEATURES/FACTS</a></li>
+            <li><a href="">WEBSITE SERVICES</a></li>
+            <li><a href="">GALLERY PORTFOLIO</a></li>
+            <li><a href="">CONTACT US</a></li>
+
+        </ul>
+       
+    </nav>
+    <section id="para">
+        <h1 style="font-size: xx-large;">CONTACT US</h1>
+        <p>Email us with any questions or inquiries or call 518-387-9327. We would be <br>
+             happy to answer your questions and set up a meeting with you. Black <br> 
+             Sheep Web Design can help set you apart from the flock!</p>
+    </section>
+    <section id="form">
+        <form>
+            <label for="">NAME:</label>
+            <input type="text" placeholder="Name"><br>
+            <label for="">EMAIL:</label>
+            <input type="text" placeholder="Email"><br>
+            <p id="message"><i class="fa-solid fa-circle-exclamation"></i> Please use a REAL email address so that we can get back to you.</p>
+            <label for="">SUBJECT:</label>
+            <input type="text" placeholder="Inquiry for balck sheep web design" style="margin-top: 20px;"><br>
+            <label for="" style="position: relative; bottom: 150px;">MESSAGE:</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea><br>
+            <label for="" id="" style="width: fit-content;">SEND ME A COPIED EMAIL:</label>
+            <input type="checkbox" style="position: relative;right: 200px;"><br>
+            <button>
+                <a href="./Hubspot.html">SEND EMAIL</a>
+            </button>
+        </form>
+    </section>
+
+</body>
+</html>

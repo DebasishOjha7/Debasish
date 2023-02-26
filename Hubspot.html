@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: hsl(0, 0%, 90%);
+        }
+        header h1{
+            position: relative;
+           bottom: 10px;
+           left: 120px;
+            height: 20px;
+            color: rgb(21, 5, 139);
+        }
+        section{
+            background-image: url(./contact_sales___hubspot_s_marketing_and_sales_software_7-6-2020-PhotoRoom.png);
+            text-align: center;
+            padding: 10px;
+            color: ghostwhite;
+            font-size: large;
+            height: 300px;
+          
+        }
+        .main{
+            width: 800px;
+            height: 360px;
+           position: relative;
+           left: 140px;
+        }
+        .main,.call,.chat,.form{
+        border: 2px solid ghostwhite;
+          padding: 10px;
+          margin: 10px;
+          box-shadow: 0 0 10px;
+          
+            
+        }
+        .main .call{
+            width: 250px;
+            height: fit-content;
+            padding: 10px;
+            text-align: center;
+            font-size:larger;
+          
+            
+        }
+        .main .chat{
+            width: 250px;
+            height: fit-content;
+            text-align: center;
+            font-size:larger;
+        }
+        .main button{
+            padding: 10px;
+            background-color:rgb(15, 163, 221);
+            color: ghostwhite;
+            
+            font-weight: bolder;
+        }
+        .form{
+            width: fit-content;
+            height: 330px;
+            position: absolute;
+            left: 300px;
+            top: 10px;
+            text-align: center;
+            
+        }
+      input,select{
+        padding: 5px;
+        font-weight: bolder;
+        box-shadow: 0 0 5px;
+      }
+     
+        header span{
+            color: red;
+        }
+        .form table{
+           position: relative;
+           left: 50px;
+           padding: 10px;
+           margin-bottom: 7px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HubSp<span>o</span>t</h1> 
+    </header>    
+
+    <section>
+        <h1>CONTACT US ABOUT HUBSPOT'S <br> SOFTWARE</h1>
+        <p>We'd love to show you how you can get more traffic and leads, increase your sales <br> productivity, provide better customer service, or all of the above! Here are a few ways <br> to reach out to our sales team.</p>
+    
+    </section>
+    <div class="main">
+        <div class="call">
+            <h4> <i class="fa-solid fa-phone-volume"></i> Call us directly at</h4>
+            <h4 style="color: rgb(15, 163, 221);">+353 512 4400</h4>
+            <p style="color: rgb(15, 163, 221);">see all number and locations</p>
+        </div>
+        <div class="chat">
+            <h4> <i class="fa-solid fa-comments"></i> Chat with our sales team</h4>
+            <button>CHAT WITH SALES</button>
+        </div>
+        <div class="form">
+            <h2>Book a Meeting</h2>
+            <p>To schedule time to speak with one of our sales representatives, complete <br> the form, then click "next" to choose a date and time that works for you.</p>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            FIRST NAME: <br>
+                            <input type="text">
+                        </td>
+                        <td>
+                            LAST NAME: <br>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            EMAIL: <br>
+                            <input type="text">
+                        </td>
+                        <td>
+                            PHONE NUMBER: <br>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            COMPANY NAME: <br>
+                            <input type="text">
+                        </td>
+                        <td>
+                            WEBSITE URL: <br>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            EMPLOYEES: <br>
+                            <select name="" id="button">
+                                <option value="">Please select</option>
+                            </select>
+                        </td>
+                        
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+  
+
+    
+</body>
+</html>
